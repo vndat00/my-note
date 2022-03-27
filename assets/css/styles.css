@@ -12,13 +12,15 @@
         Blue: hsl(207, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
+        Orange: hsl(36 , 100% , 50%);
+        Green: hsl(88 , 50% , 60%)
   */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 88;
+  --sat: 50%;
+  --lig: 53%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 49%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -245,13 +247,15 @@ body.light-theme {
 }
 
 .nav__logo {
-  color: var(--first-color);
+  /* color: var(--first-color); */
+  /* color: #fff; */
+  color: var(--text-color);
   font-weight: var(--font-medium);
   transition: .4s
 }
 
 .nav__logo:hover {
-  color: var(--first-color-alt);
+  /* color: var(--first-color-alt); */
 }
 
 .nav__menu {
@@ -336,7 +340,7 @@ body.light-theme {
   height: 293px;
   background: linear-gradient(180deg,
               hsla(var(--first-hue), var(--sat), var(--lig), 1),
-              hsla(var(--first-hue), var(--sat), var(--lig), .2));
+              hsla(var(--first-hue), var(--sat), var(--lig), .35));
   border-radius:10rem 10rem 1rem 1rem;
   display: flex;
   align-items: flex-end;
@@ -470,7 +474,7 @@ body.light-theme {
 }
 
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+  font-size: var(--smaller-font-size);
 }
 
 .about__description {
